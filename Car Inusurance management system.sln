@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inusurance management system", "hamzah\Inusurance management system.csproj", "{3745DF89-3C41-414C-AF76-7ADC512353A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3745DF89-3C41-414C-AF76-7ADC512353A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3745DF89-3C41-414C-AF76-7ADC512353A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3745DF89-3C41-414C-AF76-7ADC512353A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3745DF89-3C41-414C-AF76-7ADC512353A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF0DAA06-554E-44B0-B2BC-22B8C903AE30}
+	EndGlobalSection
+EndGlobal

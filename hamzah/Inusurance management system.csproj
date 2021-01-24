@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3745DF89-3C41-414C-AF76-7ADC512353A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Insurance_customer_management_system</RootNamespace>
+    <AssemblyName>Insurance_customer_management_system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="car.cs" />
+    <Compile Include="customersearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customersearch.Designer.cs">
+      <DependentUpon>customersearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="check_insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check_insurance.Designer.cs">
+      <DependentUpon>check_insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="experimental_sql.cs" />
+    <Compile Include="claim_insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="claim_insurance.Designer.cs">
+      <DependentUpon>claim_insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment_history.Designer.cs">
+      <DependentUpon>payment_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upgrade_insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upgrade_insurance.Designer.cs">
+      <DependentUpon>upgrade_insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="purchase_new_insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase_new_insurance.Designer.cs">
+      <DependentUpon>purchase_new_insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renew_insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renew_insurance.Designer.cs">
+      <DependentUpon>renew_insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.Designer.cs">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifyaccount.Designer.cs">
+      <DependentUpon>modifyaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registration.Designer.cs">
+      <DependentUpon>registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="claim_insurance.resx">
+      <DependentUpon>claim_insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customersearch.resx">
+      <DependentUpon>customersearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check_insurance.resx">
+      <DependentUpon>check_insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment_history.resx">
+      <DependentUpon>payment_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upgrade_insurance.resx">
+      <DependentUpon>upgrade_insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="purchase_new_insurance.resx">
+      <DependentUpon>purchase_new_insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renew_insurance.resx">
+      <DependentUpon>renew_insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu.resx">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyaccount.resx">
+      <DependentUpon>modifyaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registration.resx">
+      <DependentUpon>registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
